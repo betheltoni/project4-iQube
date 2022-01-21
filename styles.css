@@ -1,6 +1,8 @@
+body{
+  text-align: center;
+}
 header {
   background-image: url(images/banner-bg.jpg);
-
 }
 table{
 border-collapse: separate;
@@ -13,13 +15,21 @@ div{
 ul{
   list-style: none;
 }
+.nav-list{
+  display: inline;
+}
+.nav-item{
+  padding-left: 1200px;
+}
 .header-image{
   margin-left: 250px;
+  margin-top: auto;
+  margin-bottom: auto;
   float: left;
 }
 .header-text{
   padding-top: 198px;
-padding-bottom: 50px;
+padding-bottom: 70px;
 margin-left: 600px;
 }
 
@@ -28,6 +38,16 @@ margin-left: 600px;
 }
 .second-div{
   text-align: center;
+  background-color: #d6d6d6;
+  padding-top: 20px;
+}
+.second-div-table{
+  margin: auto;
+
+}
+.price-div{
+  padding-left: 70px;
+  padding-right: 70px;
 }
 .third-div{
   text-align: center;
@@ -62,7 +82,7 @@ float: left;
 padding-right: 50px;
 }
 .footer-table{
-  margin-top: 100px;
+  margin-top: 250px;
   margin-left: auto;
   margin-right: auto;
 }
