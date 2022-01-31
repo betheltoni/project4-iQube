@@ -1,93 +1,441 @@
-body{
-  text-align: center;
+/* mobile responsive css */
+@media only screen and (max-width: 800px) {
+  body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  body .curvedImageSection {
+    content: url(images/bg-section-top-mobile-1.svg );
+    width: 100%;
+    position: relative;
+    top: 10px;
+  }
+
+  body .title-div {
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    margin: 5px 10px;
+    padding: 0 30px
+  }
+
+  body .title-div img {
+    width: 9%;
+  }
+
+  body .title-div h1 {
+    font-size: 1.2em;
+  }
+
+  body .title-button {
+    /* margin: 0; */
+    padding: 2px 5px;
+    margin-left: 25%;
+  }
+
+  body .heading {
+    width: 100%;
+    letter-spacing: normal;
+    font-size: 1.5em;
+  }
+
+  body .header-article {
+    width: 80%;
+    padding: 50px 30px;
+  }
+
+  body .headingText {
+    margin: 0;
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  body .header-button {
+    font-size: 1em;
+    padding: 5px 18px;
+  }
+
+  body .data {
+    display: block;
+    text-align: center;
+  }
+
+  body .dataCommunities {
+    text-align: center;
+    padding: 100px 0 50px 0;
+  }
+
+  body .dataCommunities div {
+    text-align: left;
+    margin-left: 37%;
+  }
+
+  body .dataCommunities div p {
+    text-align: left;
+  }
+
+  body .dataMessages {
+    text-align: center;
+    padding: 50px 0 100px 0;
+  }
+
+  body .dataMessages div {
+    text-align: left;
+    margin-left: 40%;
+  }
+
+  body .growTogether {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  body .growTogetherImage {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  body .growTogetherText {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  body .conversation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  body .conversationsSectionImage {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  body .conversationsSectionText {
+    margin: 0 auto;
+    padding-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  body .users {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  body .usersSectionImage {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  body .usersSectionText {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  body .communitySection {
+    width: 100%;
+    margin: auto;
+    font-size: 0.8em;
+  }
+
+  body .communitySection h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  body .footerDiv {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: left;
+    text-align: center;
+    padding: 10%;
+  }
+
+  body .footerNewsletter {
+    margin: auto;
+    text-align: left;
+  }
+
+  body .footer-button {
+    display: block;
+    margin: auto;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+  }
+
+  body input {
+    width: 98%;
+  }
+
+  body .footerIconSection {
+    margin: auto;
+    text-align: left;
+  }
 }
+
+/* desktop css */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* font-size: 1.2em; */
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: hsl(192, 100%, 9%);
+}
+
 header {
-  background-image: url(images/banner-bg.jpg);
-}
-table{
-border-collapse: separate;
-border-spacing: 30px;
-}
-
-div{
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
-ul{
-  list-style: none;
+
+.curvedImageFooter {
+  content: url(images/bg-footer-top-desktop.svg );
+  width: 100%;
+  position: relative;
+  top: 10px;
 }
-.nav-list{
+
+.curvedImageSection {
+  content: url(images/bg-section-top-desktop-1.svg );
+  width: 100%;
+  position: relative;
+  top: 10px;
+}
+
+.header-button {
+  background-color: hsl(322, 100%, 66%);
+  border: 2px solid;
+  border-color: hsl(322, 100%, 66%);
+  border-radius: 50px;
+  color: white;
+  font-size: 1.2em;
+  padding: 13px 35px;
+  margin-top: 20px;
+}
+
+.header-button:hover {
+  background-color: hsl(321, 100%, 78%);
+  border-color: hsl(321, 100%, 78%);
+  cursor: pointer;
+}
+
+.title-div {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.title-heading {
   display: inline;
-}
-.nav-item{
-  padding-left: 1200px;
-}
-.header-image{
-  margin-left: 250px;
-  margin-top: auto;
-  margin-bottom: auto;
-  float: left;
-}
-.header-text{
-  padding-top: 198px;
-padding-bottom: 70px;
-margin-left: 600px;
+  /* font-family: 'Poppins', sans-serif; */
+  font-size: 2.5em;
 }
 
-.first-div-table{
-  margin: auto;
+.title-button {
+  background-color: white;
+  border: 2px solid;
+  border-color: hsl(322, 100%, 66%);
+  border-radius: 50px;
+  color: hsl(322, 100%, 66%);
+  display: inline;
+  padding: 3px 15px;
+  margin-left: 50%;
 }
-.second-div{
-  text-align: center;
-  background-color: #d6d6d6;
-  padding-top: 20px;
-}
-.second-div-table{
-  margin: auto;
 
+.title-button:hover {
+  border-color: hsl(0, 100%, 63%);
+  color: hsl(0, 100%, 63%);
+  cursor: pointer;
 }
-.price-div{
-  padding-left: 70px;
-  padding-right: 70px;
+
+.heading {
+  letter-spacing: 1px;
+  font-size: 2.5em;
 }
-.third-div{
-  text-align: center;
+
+.header-article {
+  padding-top: 120px;
 }
-.test-images{
-  border-radius: 50%;
+
+.headingText {
+  width: 100px;
+  width: 500px;
+  margin-left: 33%;
 }
-.test-table{
-  margin: auto;
-  padding-left: 200px;
-  padding-right: 200px;
+
+.dataSection {
+  margin-top: 100px;
 }
-.fourth-div{
-  text-align: center;
-  background-color: #606060;
+
+.flex-container {
+  display: flex;
 }
-.fourth-table{
-  margin: auto;
-}
-.fifth-div{
-  background-image: url(images/banner-bg.jpg);
-  line-height: 50px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-}
-.sixth-div{
+
+.dataCommunities {
+  margin-left: 20%;
+  margin-right: 28%;
   text-align: left;
 }
-.contact-img{
-float: left;
-padding-right: 50px;
+
+.dataMessages {
+  text-align: left;
 }
-.footer-table{
-  margin-top: 250px;
-  margin-left: auto;
-  margin-right: auto;
+
+.dataSection div h1 {
+  font-size: 3em;
+  margin: 0;
 }
-.footer-img{
-  position: absolute;
-  display: block;
-  margin-left: auto;
-  }
+
+.dataSection div p {
+  margin: 0;
+  text-align: center;
+  color: #c5c2c1;
+}
+
+/*
+.topCurvedImage {
+  position: relative;
+  top: 10px;
+} */
+.growTogether {
+  background-color: hsl(207, 100%, 98%);
+  padding-top: 80px;
+}
+
+.growTogetherImage {
+  padding-left: 50px;
+  width: 800px;
+}
+
+.growTogetherText {
+  padding-left: 100px;
+  padding-top: 50px;
+  text-align: left;
+  width: 600px;
+}
+
+.conversationsSectionImage {
+  padding-right: 50px;
+  width: 800px;
+}
+
+.conversationsSectionText {
+  padding-right: 100px;
+  padding-top: 50px;
+  text-align: left;
+  width: 700px;
+}
+
+.conversation {
+  padding-top: 80px;
+}
+
+.users {
+  background-color: hsl(207, 100%, 98%);
+  padding-top: 80px;
+}
+
+.usersSectionImage {
+  padding-left: 50px;
+  width: 800px;
+}
+
+.usersSectionText {
+  padding-left: 100px;
+  padding-top: 50px;
+  text-align: left;
+  width: 600px;
+}
+
+.communitySection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.communitySection h1 {
+  font-size: 2.5em;
+}
+
+footer {
+  color: white;
+  text-align: left;
+}
+
+.footerDiv {
+  background-color: hsl(192, 100%, 9%);
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.footerImage {}
+
+.footerText {
+  display: inline;
+}
+
+.footerNewsletter {
+  margin-left: 200px;
+  margin-right: 280px;
+}
+
+.footerIconSection {
+  margin-left: 100px;
+}
+
+.footerIcon {
+  margin-top: 10px;
+}
+
+.footer-button {
+  background-color: hsl(322, 100%, 66%);
+  border: 2px solid;
+  border-color: hsl(322, 100%, 66%);
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  padding: 8px 40px;
+  margin-top: 20px;
+  margin-left: 5px;
+  display: inline;
+}
+
+.footer-button:hover {
+  background-color: hsl(321, 100%, 78%);
+  border-color: hsl(321, 100%, 78%);
+  cursor: pointer;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: inline;
+}
+
+.socialIcon {
+  margin-top: 50px;
+  padding-right: 10px;
+}
+
+.fa-facebook:hover {
+  color: #4267B2;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: #C13584;
+  cursor: pointer;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+  cursor: pointer;
+}
